@@ -1,0 +1,36 @@
+.header {
+    padding: 25px 0;
+
+    @media ( min-width: 769px ) {
+        padding: 65px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 25px;
+
+        @media ( min-width: 769px ) {
+            height: 50px;
+        }
+    }
+
+    &--nav {
+        &--list {
+            display: flex;
+
+            &__item {
+                display: inline-block;
+                padding-left: 25px; 
+
+                @media ( min-width: 769px ) {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.footer {
+    padding: 65px 0 45px;
+    background-color: $color-very-dark-blue;
+    color: white;
+
+    @media ( min-width: 769px ) {
+        padding: 95px 0 70px;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &--contact {
+        padding-bottom: 65px;
+
+        @media ( min-width: 769px ) {
+            flex-basis: 33%;
+        }
+
+        &__logo {
+            padding-bottom: 40px;
+        }
+
+        &--phone {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+
+            &__icon {
+                content: url("../../images/icon-phone.svg");
+                padding-right: 20px;
+            }
+        }
+
+        &--email {
+            display: flex;
+            align-items: center;
+
+            &__icon {
+                content: url("../../images/icon-email.svg");
+                padding-right: 20px;
+            }
+        }
+    }
+
+    &--links {
+        @media ( min-width: 769px ) {
+            flex-basis: 33%;
+            align-self: flex-end;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        &--list {
+            padding-bottom: 50px;
+
+            @media ( min-width: 769px ) {
+                padding-bottom: 0;
+                padding-top: 75px;
+            }
+
+            &__item {
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+    &--social {
+        display: flex;
+        justify-content: center;
+
+        @media ( min-width: 769px ) {
+            flex-basis: 33%;
+            padding-top: 75px;
+        }
+
+        &__facebook-wrapper {
+            @include social();
+        }
+
+        &__twitter-wrapper {
+            @include social();
+        }
+
+        &__instagram {
+            @include social();
+        }
+
+        div:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}

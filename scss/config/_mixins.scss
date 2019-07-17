@@ -1,0 +1,12 @@
+@mixin social() {
+    font-size: 1.6rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 100%;
+    text-align: center;
+
+}
